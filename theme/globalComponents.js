@@ -13,12 +13,12 @@ export const Section = styled.section`
   grid-template-columns: 1fr 1fr;
 
   @media ${(props) => breakpoints.md} {
-    padding: ${(props) => (props.nopadding ? "0" : "24px 48px 0")};
+    padding: 0;
     flex-direction: column;
   }
 
   @media ${(props) => breakpoints.sm} {
-    padding: ${(props) => (props.nopadding ? "0" : "16px 16px 0")};
+    padding: 0;
     width: calc(100vw - 32px);
     flex-direction: column;
   }

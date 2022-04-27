@@ -33,7 +33,7 @@ const Layout = ({ children, title }) => {
       </Head>
       {/* webpage */}
       <Navbar path={path.asPath} />
-      <Container maxW="container.xl" pt={14} pb="100px" pl={0}>
+      <Container maxW="container.xl" pt={14} pb="100px" justifyContent="center">
         {children}
       </Container>
       <Footer />
