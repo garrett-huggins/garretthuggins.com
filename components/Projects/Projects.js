@@ -53,6 +53,7 @@ const Projects = () => {
                   src={image}
                   width="400"
                   height="200"
+                  layout="responsive"
                   alt="Project Image"
                 />
                 <Title>

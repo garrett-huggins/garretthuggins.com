@@ -10,7 +10,7 @@ Welcome to my very first personal website!
 
 This will be the home to many of my portfolio projects as well as my resume. This is my first attempt at creating a React/Next.js website from start to finish using everything I have been able to learn _for free_ from the internet.
 
-This website was created using [Next.js](https://nextjs.org/) as the foundation and was styled using [Chakra UI](https://chakra-ui.com/) alongside [Style Components](https://emotion.sh/docs/styled), hosted by [Vercel](https://vercel.com/).
+This website was created using [Next.js](https://nextjs.org/) as the foundation and was styled using [Chakra UI](https://chakra-ui.com/) alongside [Styled Components](https://emotion.sh/docs/styled), hosted by [Vercel](https://vercel.com/).
 
 ## Project Structure
 
@@ -60,4 +60,4 @@ I gave myself a deadline of exactly one week to complete this website, start to 
 
 #### Special Thanks
 
-I would like to give a special thanks to Ryan Lalchand for his wise words and warm welcome into YCC, and Joe Duncko for inspiration and the confidence to create this website in the first place.
+I would like to give a special thanks to [Ryan Lalchand](https://www.ryanlalchand.com/) for his wise words and warm welcome into YCC, and [Joe Duncko](https://joeduncko.com/) for inspiration and the confidence to create this website in the first place.

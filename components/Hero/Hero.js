@@ -34,7 +34,7 @@ const Hero = (props) => (
             justifyContent="center"
             fontSize="1.5rem"
           >
-            <ContactLink href="mailto: gjhuggins@student.ysu.edu">
+            <ContactLink href="mailto:gjhuggins@student.ysu.edu">
               <GoMail />
             </ContactLink>
           </GridItem>
