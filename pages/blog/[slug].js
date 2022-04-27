@@ -7,6 +7,7 @@ import { marked } from "marked";
 import markdownStyles from "./markdown-styles.module.css";
 import { CardPage, PostTitle, PostDate } from "../../components/BlogStyles";
 import { useColorModeValue, Button } from "@chakra-ui/react";
+import { IoArrowBack } from "react-icons/io5";
 
 export default function PostPage({
   frontmatter: { title, date, cover_image },
@@ -15,8 +16,8 @@ export default function PostPage({
   return (
     <Layout title={`${title} | Garrett Huggins`}>
       <Link href="/blog" passHref>
-        <Button p={6} fontSize="2rem" mt={2} mb={2}>
-          Go Back
+        <Button p={3} fontSize="1rem" mt={3} mb={3}>
+          <IoArrowBack /> Go Back
         </Button>
       </Link>
 
