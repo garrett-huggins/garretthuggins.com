@@ -43,7 +43,7 @@ const Footer = () => {
             fontSize="1.5rem"
           >
             <NextLink
-              href="https://github.com/garrett-huggins/portfolio-website"
+              href="https://github.com/garrett-huggins/garretthuggins.com"
               target="_blank"
             >
               <a target="_blank">
