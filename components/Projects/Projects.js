@@ -68,7 +68,7 @@ const Projects = () => {
                     {tags.map((tag, i) => {
                       return (
                         <Tag key={i}>
-                          <Text>/{tag}</Text>
+                          <Text>*{tag}</Text>
                         </Tag>
                       );
                     })}

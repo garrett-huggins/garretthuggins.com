@@ -7,8 +7,8 @@ export default function Home() {
   return (
     <Layout title="Garrett Huggins">
       <Hero />
-      <Projects />
       <About />
+      <Projects />
     </Layout>
   );
 }
