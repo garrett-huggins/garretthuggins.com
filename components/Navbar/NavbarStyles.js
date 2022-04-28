@@ -1,17 +1,25 @@
 import NextLink from "next/link";
-import { Link, useColorModeValue, MenuItem } from "@chakra-ui/react";
-import { ArrowRightIcon, ArrowLeftIcon } from "@chakra-ui/icons";
+import {
+  Link,
+  useColorModeValue,
+  Menu,
+  MenuList,
+  MenuItem,
+  MenuButton,
+  Button,
+} from "@chakra-ui/react";
+import { ChevronDownIcon } from "@chakra-ui/icons";
 
-export const LinkItem = ({ home, href, path, children }) => {
+export const LinkItem = ({ href, path, children, noPadding }) => {
   const active = path === href;
   const inactiveColor = useColorModeValue("gray200", "whiteAlpha.900");
   return (
     <NextLink href={href} passHref>
       <Link
-        p={2}
+        p={noPadding ? 0 : 2}
         borderRadius="base"
-        bg={active || home ? "blackAlpha.600" : undefined}
-        color={active || home ? "white" : inactiveColor}
+        bg={active ? "blackAlpha.600" : undefined}
+        color={active ? "white" : inactiveColor}
       >
         {children}
       </Link>
@@ -23,24 +31,31 @@ export const HomePaths = ({ path }) => {
   if (path == "/" || path == "/#projects" || path == "/#about") {
     return (
       <>
-        <LinkItem href="/" home={true}>
-          Home
-        </LinkItem>
-        <LinkItem href="#projects">
-          <ArrowRightIcon mr="5px" />
-          Projects
-        </LinkItem>
-        <LinkItem href="#about">
-          <ArrowRightIcon mr="5px" />
-          About
-        </LinkItem>
+        <Menu>
+          <MenuButton
+            as={Button}
+            bg="blackAlpha.600"
+            color="white"
+            rightIcon={<ChevronDownIcon />}
+            _hover={{ textDecoration: "underline" }}
+          >
+            Home
+          </MenuButton>
+          <MenuList margin={0}>
+            <LinkItem href="#about" noPadding>
+              <MenuItem>About</MenuItem>
+            </LinkItem>
+            <LinkItem href="#projects" noPadding>
+              <MenuItem>Projects</MenuItem>
+            </LinkItem>
+          </MenuList>
+        </Menu>
       </>
     );
   } else {
     return (
       <>
         <LinkItem href="/" path={path}>
-          <ArrowLeftIcon mr="5px" />
           Home
         </LinkItem>
       </>
@@ -52,11 +67,11 @@ export const MenuHomePaths = ({ path }) => {
   if (path == "/" || path == "/#projects" || path == "/#about") {
     return (
       <>
-        <NextLink href="#projects" passHref>
-          <MenuItem as={Link}>Projects</MenuItem>
-        </NextLink>
         <NextLink href="#about" passHref>
           <MenuItem as={Link}>About</MenuItem>
+        </NextLink>
+        <NextLink href="#projects" passHref>
+          <MenuItem as={Link}>Projects</MenuItem>
         </NextLink>
       </>
     );
