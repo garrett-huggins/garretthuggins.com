@@ -11,6 +11,9 @@ export const Posts = styled.div`
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
   margin-top: 30px;
+  @media ${(props) => breakpoints.md} {
+    grid-template-columns: repeat(1, 1fr);
+  }
 `;
 
 export const CardPage = styled.div`
