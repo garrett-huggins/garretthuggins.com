@@ -31,6 +31,11 @@ const Navbar = (props) => {
       bg={useColorModeValue("#b8c5d1", "#2a3947")}
       zIndex={1}
       {...props}
+      sx={{
+        "@media print": {
+          display: "none",
+        },
+      }}
     >
       {/* Nav Container */}
       <Container
