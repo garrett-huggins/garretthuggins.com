@@ -15,6 +15,12 @@ export const List = styled.ul`
   font-size: 14px;
 `;
 
+export const SkillsList = styled.ul`
+  justify-content: space-around;
+  list-style-position: inside;
+  font-size: 14px;
+`;
+
 export const ListItem = styled.li`
   padding: 0 5px;
 `;
@@ -184,19 +190,60 @@ export const Experiences = () => {
 export const Skills = () => {
   return (
     <Box mt={4} w="100%">
-      <Text as="h2" fontSize="1.5rem">
-        Skills
-      </Text>
+      <Grid
+        templateColumns="repeat(3,1fr)"
+        fontSize={{ base: "16px", sm: "1.5rem" }}
+        sx={{
+          "@media print": {
+            fontSize: "1.5rem",
+          },
+        }}
+      >
+        <GridItem colSpan={1}>
+          <Text as="h2">Skills</Text>
+        </GridItem>
+        <GridItem colSpan={1}>
+          <Text as="h2">Languages</Text>
+        </GridItem>
+        <GridItem colSpan={1}>
+          <Text as="h2">Technologies</Text>
+        </GridItem>
+      </Grid>
+
       <Break />
 
-      <Text textAlign="center" mt={1}>
+      {/* <Text textAlign="center" mt={1}>
         Avid Learner | Strong Communication and Interpersonal Skills |
         Problem-Solving | Leadership
-      </Text>
-      <Text textAlign="center">
-        Javascript | HTML/CSS | Python | SQL | C++ | Java
-      </Text>
-      <Text textAlign="center">React.js | Node.js | Next.js | Git/GitHub</Text>
+      </Text> */}
+      <Grid templateColumns="repeat(3,1fr)">
+        <GridItem colSpan={1}>
+          <SkillsList>
+            <ListItem>Avid Learner</ListItem>
+            <ListItem>Dynamic Design Patterns</ListItem>
+            <ListItem>Software Documentation</ListItem>
+            <ListItem>Development Standards</ListItem>
+            <ListItem>Continuous Integration Systems</ListItem>
+          </SkillsList>
+        </GridItem>
+        <GridItem colSpan={1}>
+          <SkillsList>
+            <ListItem>Javascript</ListItem>
+            <ListItem>HTML/CSS</ListItem>
+            <ListItem>Python</ListItem>
+            <ListItem>SQL</ListItem>
+            <ListItem>C++</ListItem>
+          </SkillsList>
+        </GridItem>
+        <GridItem colSpan={1}>
+          <SkillsList>
+            <ListItem>React.js</ListItem>
+            <ListItem>Next.js</ListItem>
+            <ListItem>Node.js</ListItem>
+            <ListItem>Git/GitHub</ListItem>
+          </SkillsList>
+        </GridItem>
+      </Grid>
     </Box>
   );
 };
