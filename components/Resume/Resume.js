@@ -1,5 +1,12 @@
 import { Box, Grid, GridItem } from "@chakra-ui/react";
-import { Break, ResumeHead, Education, Experiences } from "./ResumeStyles";
+import {
+  Break,
+  ResumeHead,
+  Education,
+  Experiences,
+  Skills,
+  DeveloperSkills,
+} from "./ResumeStyles";
 
 const Resume = () => {
   return (
@@ -17,6 +24,8 @@ const Resume = () => {
           <Break />
           <Education />
           <Experiences />
+          <Skills />
+          <DeveloperSkills />
         </GridItem>
       </Grid>
     </Box>

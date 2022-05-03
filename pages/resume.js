@@ -11,6 +11,7 @@ export default function Resume() {
     <Layout title="Garrett Huggins | Resume">
       <Container
         maxW="960px"
+        p={0}
         sx={{
           "@media print": {
             marginTop: "-100px",
@@ -29,7 +30,7 @@ export default function Resume() {
             },
           }}
         >
-          Download Resume
+          Print Resume
         </Button>
       </Container>
     </Layout>
