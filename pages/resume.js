@@ -1,5 +1,5 @@
 import Layout from "../components/Layout";
-import { Container, Box, Button } from "@chakra-ui/react";
+import { Container, Button } from "@chakra-ui/react";
 import ResumePage from "../components/Resume/Resume";
 
 export default function Resume() {
@@ -22,7 +22,7 @@ export default function Resume() {
         <Button
           w="100%"
           p={{ base: 2, xs: 9 }}
-          fontSize={{ base: "1rem", xs: "2rem" }}
+          fontSize={{ base: "1.5rem", xs: "2rem" }}
           onClick={print}
           sx={{
             "@media print": {

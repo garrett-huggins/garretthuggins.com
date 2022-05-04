@@ -2,6 +2,7 @@ import styled from "@emotion/styled";
 import { breakpoints } from "../../theme/breakpoints";
 import { Box, Text, Grid, GridItem } from "@chakra-ui/react";
 import { experiences } from "../../data/experiences";
+import { resumeProjects } from "../../data/resume-projects";
 import { FaGithub, FaLinkedin, FaAddressCard } from "react-icons/fa";
 
 export const Break = styled.hr`
@@ -90,7 +91,7 @@ export const ResumeHead = () => {
 
 export const Education = () => {
   return (
-    <Box mt={4}>
+    <Box mt={2}>
       <Text as="h2" fontSize="1.5rem">
         Education
       </Text>
@@ -102,11 +103,13 @@ export const Education = () => {
         lineHeight="1.25rem"
       >
         <GridItem colSpan={2}>
-          <Text>Bachelor of Science in Information Technology</Text>
+          <Text fontWeight="bold">
+            Bachelor of Science in Information Technology
+          </Text>
         </GridItem>
         <GridItem colSpan={1}>
           <Text float="right" color="#bdbdbd" fontSize="14px">
-            Graduating May 2024
+            May 2024
           </Text>
         </GridItem>
         <GridItem colSpan={3}>
@@ -127,7 +130,7 @@ export const Education = () => {
 
 export const Experiences = () => {
   return (
-    <Box mt={4}>
+    <Box mt={2}>
       <Text as="h2" fontSize="1.5rem">
         Relevant Experiences
       </Text>
@@ -189,43 +192,59 @@ export const Experiences = () => {
 
 export const Skills = () => {
   return (
-    <Box mt={4} w="100%">
+    <Box mt={2} w="100%" lineHeight={1}>
+      {/* LARGE */}
       <Grid
         templateColumns="repeat(3,1fr)"
-        fontSize={{ base: "16px", sm: "1.5rem" }}
+        fontSize="1.5rem"
+        display={{ base: "none", sm: "grid" }}
         sx={{
           "@media print": {
-            fontSize: "1.5rem",
+            display: "grid",
           },
         }}
       >
         <GridItem colSpan={1}>
           <Text as="h2">Skills</Text>
         </GridItem>
+        <GridItem colSpan={1} justifySelf="center">
+          <Text as="h2">Languages</Text>
+        </GridItem>
+        <GridItem colSpan={1} justifySelf="center">
+          <Text as="h2">Technologies</Text>
+        </GridItem>
+      </Grid>
+      {/* SMALL */}
+      <Grid
+        templateColumns="repeat(2,1fr)"
+        fontSize="1.5rem"
+        display={{ base: "grid", sm: "none" }}
+        sx={{
+          "@media print": {
+            display: "none",
+          },
+        }}
+      >
         <GridItem colSpan={1}>
           <Text as="h2">Languages</Text>
         </GridItem>
-        <GridItem colSpan={1}>
+        <GridItem colSpan={1} justifySelf="center">
           <Text as="h2">Technologies</Text>
         </GridItem>
       </Grid>
 
       <Break />
 
-      {/* <Text textAlign="center" mt={1}>
-        Avid Learner | Strong Communication and Interpersonal Skills |
-        Problem-Solving | Leadership
-      </Text> */}
-      <Grid templateColumns="repeat(3,1fr)">
-        <GridItem colSpan={1}>
-          <SkillsList>
-            <ListItem>Avid Learner</ListItem>
-            <ListItem>Dynamic Design Patterns</ListItem>
-            <ListItem>Software Documentation</ListItem>
-            <ListItem>Development Standards</ListItem>
-            <ListItem>Continuous Integration Systems</ListItem>
-          </SkillsList>
-        </GridItem>
+      {/* SMALL */}
+      <Grid
+        templateColumns="repeat(2,1fr)"
+        display={{ base: "grid", sm: "none" }}
+        sx={{
+          "@media print": {
+            display: "none",
+          },
+        }}
+      >
         <GridItem colSpan={1}>
           <SkillsList>
             <ListItem>Javascript</ListItem>
@@ -235,12 +254,52 @@ export const Skills = () => {
             <ListItem>C++</ListItem>
           </SkillsList>
         </GridItem>
-        <GridItem colSpan={1}>
+        <GridItem colSpan={1} justifySelf="center">
           <SkillsList>
             <ListItem>React.js</ListItem>
             <ListItem>Next.js</ListItem>
             <ListItem>Node.js</ListItem>
             <ListItem>Git/GitHub</ListItem>
+            <ListItem>MongoDB</ListItem>
+          </SkillsList>
+        </GridItem>
+      </Grid>
+
+      {/* LARGE */}
+      <Grid
+        templateColumns="repeat(3,1fr)"
+        display={{ base: "none", sm: "grid" }}
+        sx={{
+          "@media print": {
+            display: "grid",
+          },
+        }}
+      >
+        <GridItem colSpan={1}>
+          <SkillsList>
+            <ListItem>Avid Learner</ListItem>
+            <ListItem>Dynamic Design Patterns</ListItem>
+            <ListItem>Software Documentation</ListItem>
+            <ListItem>Development Standards</ListItem>
+            <ListItem>Continuous Integration Systems</ListItem>
+          </SkillsList>
+        </GridItem>
+        <GridItem colSpan={1} justifySelf="center">
+          <SkillsList>
+            <ListItem>Javascript</ListItem>
+            <ListItem>HTML/CSS</ListItem>
+            <ListItem>Python</ListItem>
+            <ListItem>SQL</ListItem>
+            <ListItem>C++</ListItem>
+          </SkillsList>
+        </GridItem>
+        <GridItem colSpan={1} justifySelf="center">
+          <SkillsList>
+            <ListItem>React.js</ListItem>
+            <ListItem>Next.js</ListItem>
+            <ListItem>Node.js</ListItem>
+            <ListItem>Git/GitHub</ListItem>
+            <ListItem>MongoDB</ListItem>
           </SkillsList>
         </GridItem>
       </Grid>
@@ -248,13 +307,28 @@ export const Skills = () => {
   );
 };
 
-export const DeveloperSkills = () => {
+export const SelectProjects = () => {
   return (
-    <Box mt={4} w="100%">
+    <Box mt={2} w="100%" fontSize="14px" lineHeight={1.2}>
       <Text as="h2" fontSize="1.5rem">
-        Developer Skills
+        Select Projects
       </Text>
       <Break />
+      {resumeProjects.map(({ id, title, link, description }) => {
+        return (
+          <Box key={id}>
+            <Box mt={1} display="flex">
+              <Text fontWeight="bold" mr={2}>
+                {title}
+              </Text>
+              <Text fontSize="12px" alignSelf="center">
+                {link}
+              </Text>
+            </Box>
+            <Text>{description}</Text>
+          </Box>
+        );
+      })}
     </Box>
   );
 };

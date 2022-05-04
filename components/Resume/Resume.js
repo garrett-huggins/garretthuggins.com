@@ -5,7 +5,7 @@ import {
   Education,
   Experiences,
   Skills,
-  DeveloperSkills,
+  SelectProjects,
 } from "./ResumeStyles";
 
 const Resume = () => {
@@ -22,10 +22,14 @@ const Resume = () => {
         <ResumeHead />
         <GridItem colSpan={3} mt={1}>
           <Break />
+          <p>
+            Highly motivated and detail-oriented developer with a passion for
+            learning.
+          </p>
           <Education />
           <Experiences />
           <Skills />
-          <DeveloperSkills />
+          <SelectProjects />
         </GridItem>
       </Grid>
     </Box>
