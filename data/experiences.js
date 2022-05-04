@@ -6,7 +6,7 @@ export const experiences = [
     startDate: "Jan 2022",
     endDate: "Present",
     description: [
-      "Maintained the student organization's websites, following best practices and web standards while keeping the information updated through continuous integration via GitHub.",
+      "Maintained the student organization's websites, following best practices and web standards creating static websites while keeping the information updated through continuous integration via GitHub.",
     ],
   },
   {
