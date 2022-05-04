@@ -14,7 +14,17 @@ const Footer = () => {
   const featherImg = `/feather${useColorModeValue("", "dark")}.png`;
 
   return (
-    <Container position="absolute" maxW="100%" bottom="0" p={2}>
+    <Container
+      position="absolute"
+      maxW="100%"
+      bottom="0"
+      p={2}
+      sx={{
+        "@media print": {
+          display: "none",
+        },
+      }}
+    >
       <Box
         padding={{ base: "0 10px", sm: "0 20px" }}
         borderRadius="lg"

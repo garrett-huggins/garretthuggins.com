@@ -17,7 +17,7 @@ import { projects } from "../../data/projects";
 const Projects = () => {
   const colorMode = useColorModeValue("grey", "#6b3030");
   const hoverMode = useColorModeValue("#5c5c5c", "#6b2323");
-  const linkColor = useColorModeValue("", "#d4c0c0");
+  const linkColor = useColorModeValue("white", "#d4c0c0");
 
   // use this section when there are more projects to load
   // const [data, setData] = useState([]);
@@ -68,7 +68,7 @@ const Projects = () => {
                     {tags.map((tag, i) => {
                       return (
                         <Tag key={i}>
-                          <Text>*{tag}</Text>
+                          <Text>/{tag}/</Text>
                         </Tag>
                       );
                     })}

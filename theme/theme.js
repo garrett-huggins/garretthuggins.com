@@ -13,6 +13,7 @@ const fonts = {
 };
 
 const breakpoints = {
+  xxs: "371",
   xs: "500px",
   sm: "640px",
   md: "768px",

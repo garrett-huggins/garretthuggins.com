@@ -57,7 +57,7 @@ export const Title = styled.div`
 `;
 
 export const Hr = styled.hr`
-  width: 100px;
+  width: 150px;
   height: 3px;
   margin: 20px auto;
   border: 0;
@@ -93,7 +93,7 @@ export const TagList = styled.ul`
   list-style-type: none;
   display: flex;
   justify-content: space-around;
-  padding: 2rem;
+  padding: 0.5rem;
 `;
 export const Tag = styled.li`
   font-size: 1.5rem;

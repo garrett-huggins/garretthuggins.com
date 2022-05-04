@@ -11,6 +11,7 @@ export const Card = styled.div`
 export const Date = styled.div`
   margin-bottom: 20px;
   padding: 3px 10px;
+  color: #c7c7c7;
   @media ${(props) => breakpoints.sm} {
     font-size: 0.75rem;
   }
