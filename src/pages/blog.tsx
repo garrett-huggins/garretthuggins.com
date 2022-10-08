@@ -15,7 +15,7 @@ export default function Blog({ posts }: { posts: PostInterface[] }) {
   return (
     <Layout pageTitle="Garrett's Blog">
       <PageContainer>
-        <h1 className="text-3xl font-semibold uppercase text-blue-highlight text-center mb-10">
+        <h1 className="text-3xl font-semibold tracking-wider uppercase text-blue-highlight text-center mb-10">
           Garrett&apos;s Blog
         </h1>
 
