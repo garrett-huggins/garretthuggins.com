@@ -1,10 +1,11 @@
 import Layout, { PageContainer } from "../../components/Layout";
+import { FaGithub, FaLinkedin, FaEnvelope, FaRss } from "react-icons/fa";
 
 export default function Resume() {
   return (
     <Layout pageTitle="Garrett Huggins' Resume">
       <PageContainer>
-        <h1 className="text-3xl font-semibold uppercase text-blue-highlight text-center mb-2">
+        <h1 className="text-4xl font-semibold tracking-wide uppercase text-blue-highlight text-center mb-10">
           Resume
         </h1>
         <div className="mb-10 flex justify-between flex-wrap items-end">
@@ -15,12 +16,24 @@ export default function Resume() {
         </div>
         <div className="grid md:grid-cols-3 grid-cols-1 gap-10 sm:text-lg text-base">
           <div className="col-span-1 grid md:grid-cols-1 xs:grid-cols-2 grid-cols-1 gap-3">
-            <div className="md:text-right">
+            <div className="sm:block hidden">
               <p className="sm:text-2xl text-xl mb-2 font-bold">Contact</p>
-              <p>Boardman, OH</p>
-              <p>/in/garretthuggins</p>
-              <p>garrett-huggins</p>
-              <p>garretthuggins.com</p>
+              <p className="flex items-center md:justify-end">
+                garretthugs@gmail.com
+                <FaEnvelope />
+              </p>
+              <p className="flex items-center md:justify-end">
+                /in/garretthuggins
+                <FaLinkedin />
+              </p>
+              <p className="flex items-center md:justify-end">
+                garrett-huggins
+                <FaGithub />
+              </p>
+              <p className="flex items-center md:justify-end">
+                garretthuggins.com
+                <FaRss />
+              </p>
             </div>
             <div className="md:text-right sm:block hidden">
               <p className="text-2xl mb-2 font-bold">Skills</p>
@@ -30,7 +43,7 @@ export default function Resume() {
               <p>Development Standards</p>
               <p>Continuous Integration Systems</p>
             </div>
-            <div className="md:text-right sm:block hidden">
+            <div className="md:text-right">
               <p className="text-2xl mb-2 font-bold">Technologies</p>
               <p>React.js</p>
               <p>Next.js</p>
@@ -38,7 +51,7 @@ export default function Resume() {
               <p>Git/GitHub</p>
               <p>MongoDB</p>
             </div>
-            <div className="md:text-right sm:block hidden">
+            <div className="md:text-right">
               <p className="text-2xl mb-2 font-bold">Languages</p>
               <p>Javascript</p>
               <p>Typescript</p>
@@ -49,7 +62,9 @@ export default function Resume() {
           </div>
           <div className="sm:col-span-2 col-span-1">
             <div>
-              <p className="text-3xl mb-2 font-bold">Education</p>
+              <p className="text-blue-highlight text-3xl font-bold tracking-wider uppercase mb-4">
+                Education
+              </p>
               <p className="sm:text-2xl text-xl mb-2 font-bold">
                 Bachelor of Science in Information Technology
               </p>
@@ -60,8 +75,10 @@ export default function Resume() {
             {/* EXPERIENCES */}
 
             <div className="mt-10">
-              <p className="text-3xl font-bold">Experience</p>
-              <div className="mt-8">
+              <p className="text-blue-highlight text-3xl font-bold tracking-wider uppercase">
+                Experience
+              </p>
+              <div className="mt-5">
                 <div className="flex w-full justify-between items-center">
                   <p className="sm:text-2xl text-xl font-bold">
                     Frontend Developer
