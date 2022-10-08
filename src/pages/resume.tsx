@@ -67,9 +67,12 @@ export default function Resume() {
               <p className="text-blue-highlight text-3xl font-bold tracking-wider uppercase mb-4">
                 Education
               </p>
-              <p className="sm:text-2xl text-xl mb-2 font-bold">
-                Bachelor of Science in Information Technology
-              </p>
+              <div className="flex w-full justify-between items-center">
+                <p className="sm:text-2xl text-xl mb-2 font-bold">
+                  Bachelor of Science in Information Technology
+                </p>
+                <p className="text-right">May 2024</p>
+              </div>
               <p>Minor: Mathematics</p>
               <p>Concentration: Application Development</p>
             </div>
