@@ -57,9 +57,9 @@ export const blogDefaults = {
   ul: (props: any) => (
     <ul className="list-disc list-inside py-2">{props.children}</ul>
   ),
-  p: (props: any) => <p className="leading-8">{props.children}</p>,
+  p: (props: any) => <p>{props.children}</p>,
   pre: (props: any) => (
-    <pre className="bg-site-light p-6 my-5 overflow-x-auto rounded-lg">
+    <pre className="bg-site-light p-4 my-5 overflow-x-auto rounded-lg">
       {props.children}
     </pre>
   ),

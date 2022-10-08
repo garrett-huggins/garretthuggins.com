@@ -10,11 +10,10 @@ import { blogDefaults } from "../../../components/Blog/blogDefaults";
 export default function PostPage({ source, frontMatter }: PostTypes) {
   return (
     <Layout pageTitle={frontMatter.title}>
-      <div className="mx-auto max-w-3xl text-[18px] sm:text-xl px-5 mb-20">
+      <div className="mx-auto max-w-3xl text-base sm:text-xl px-5 mb-20">
         <h1 className="sm:text-4xl text-3xl text-center mb-6">
           {frontMatter.title}
         </h1>
-
         <MDXRemote {...source} components={blogDefaults} />
       </div>
     </Layout>
