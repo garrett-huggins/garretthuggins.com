@@ -17,7 +17,9 @@ export default function Resume() {
         <div className="grid md:grid-cols-3 grid-cols-1 gap-10 sm:text-lg text-base">
           <div className="col-span-1 grid md:grid-cols-1 xs:grid-cols-2 grid-cols-1 gap-3">
             <div className="sm:block hidden">
-              <p className="sm:text-2xl text-xl mb-2 font-bold">Contact</p>
+              <p className="sm:text-2xl text-xl mb-2 font-bold md:text-right">
+                Contact
+              </p>
               <p className="flex items-center md:justify-end">
                 garretthugs@gmail.com
                 <FaEnvelope />

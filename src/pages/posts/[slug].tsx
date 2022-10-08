@@ -7,8 +7,6 @@ import path from "path";
 import { postFilePaths, POSTS_PATH } from "../../../utils/mdxUtils";
 import { blogDefaults } from "../../../components/Blog/blogDefaults";
 
-/* eslint-disable  @typescript-eslint/no-explicit-any */
-
 export default function PostPage({ source, frontMatter }: PostTypes) {
   return (
     <Layout pageTitle={frontMatter.title}>
@@ -16,6 +14,7 @@ export default function PostPage({ source, frontMatter }: PostTypes) {
         <h1 className="sm:text-4xl text-3xl text-center mb-6">
           {frontMatter.title}
         </h1>
+
         <MDXRemote {...source} components={blogDefaults} />
       </div>
     </Layout>
