@@ -31,7 +31,7 @@ export default function SocialLinks() {
         <FaTwitterSquare />
       </SocialLink>
       <SocialLink
-        href="mailto:garretthugs@gmail.com"
+        href="mailto:garrett@garretthuggins.com"
         title="Email"
         bgColor="bg-gray-600"
       >
