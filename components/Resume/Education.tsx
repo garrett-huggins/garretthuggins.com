@@ -11,7 +11,14 @@ export default function Education() {
           </p>
           <p className="text-right text-gray-400">May 2024</p>
         </div>
-        <p className="italic">Youngstown State University</p>
+        <a
+          href="https://ysu.edu"
+          target="_blank"
+          rel="noreferrer"
+          className="italic text-red-600 hover:text-red-400 hover:underline"
+        >
+          @ Youngstown State University
+        </a>
       </div>
       <p>Minor: Mathematics</p>
       <p>Concentration: Application Development</p>

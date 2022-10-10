@@ -7,7 +7,7 @@ import Skills from "../../components/Resume/Skills";
 
 export default function Resume() {
   return (
-    <Layout pageTitle="Garrett Huggins' Resume">
+    <Layout pageTitle="Garrett's Resume">
       <PageContainer>
         <h1 className="text-4xl font-semibold tracking-wide uppercase text-blue-highlight text-center mb-10">
           Resume
@@ -43,6 +43,7 @@ export default function Resume() {
                 return (
                   <div key={experience.title + experience.company}>
                     <ExperienceSection
+                      companyLink={experience.companyLink}
                       title={experience.title}
                       company={experience.company}
                       date={experience.date}
