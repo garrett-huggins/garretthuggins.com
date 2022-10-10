@@ -18,7 +18,7 @@ export default function HomeHero() {
                 Garrett Huggins
               </h1>
               <p className="lg:text-2xl text-lg text-center">
-                Frontend engineer and freelance developer
+                Frontend and freelance developer
               </p>
             </div>
             <Image

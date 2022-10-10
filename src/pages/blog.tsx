@@ -15,8 +15,8 @@ export default function Blog({ posts }: { posts: PostInterface[] }) {
   return (
     <Layout pageTitle="Garrett's Blog">
       <PageContainer>
-        <h1 className="text-3xl font-semibold tracking-wider uppercase text-blue-highlight text-center mb-10">
-          Garrett&apos;s Blog
+        <h1 className="text-4xl font-semibold tracking-wider uppercase text-blue-highlight text-center mb-10">
+          Blog
         </h1>
 
         <div className="grid md:grid-cols-2 grid-cols-1 gap-10">

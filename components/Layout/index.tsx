@@ -4,7 +4,7 @@ import Footer from "./Footer";
 import { useRouter } from "next/router";
 
 const pageDescription =
-  "Frontend engineer and freelance developer with a passion for bringing ideas to life.";
+  "Garrett Huggins, frontend and freelance developer with a passion for bringing ideas to life.";
 
 export default function Layout({ pageTitle, children, home }: LayoutTypes) {
   const router = useRouter();
@@ -19,10 +19,14 @@ export default function Layout({ pageTitle, children, home }: LayoutTypes) {
         <link rel="icon" href="/favicon.png" />
 
         {/* <!-- Twitter --> */}
-        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={pageTitle} />
+        <meta
+          property="twitter:url"
+          content={"https://garretthuggins.com" + router.asPath}
+        />
         <meta name="twitter:description" content={pageDescription} />
-        <meta name="twitter:image:src" content="/favicon.png" />
+        <meta name="twitter:image" content="/favicon.png" />
 
         {/* <!-- Open Graph general (Facebook, Pinterest & Google+) --> */}
         <meta name="og:title" content={pageTitle} />

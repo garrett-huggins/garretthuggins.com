@@ -1,13 +1,13 @@
-import { BiCopyright } from "react-icons/bi";
+import { BiCopyright, BiGitBranch } from "react-icons/bi";
 import Image from "next/future/image";
 
 export default function Footer() {
   return (
-    <footer className="p-2 bg-footer-gradient absolute bottom-0 w-full">
-      <div className="max-w-5xl flex justify-between mx-auto px-3 my-3">
+    <footer className="p-1 bg-footer-gradient absolute bottom-0 w-full">
+      <div className="max-w-5xl flex justify-between mx-auto px-3">
         <div>
-          <p className="text-purple-highlight mb-3">Links</p>
-          <div className="grid grid-cols-2 sm:text-lg text-base gap-y-1 gap-x-2">
+          <p className="text-purple-highlight text-lg">Links</p>
+          <div className="grid grid-cols-2 text-base gap-x-2">
             <FooterLink
               href="https://github.com/garrett-huggins"
               social="GitHub"
@@ -16,15 +16,21 @@ export default function Footer() {
               href="https://twitter.com/garrett_h2o"
               social="Twitter"
             />
-            <FooterLink href="mailto:garretthugs@gmail.com" social="Contact" />
+            <FooterLink
+              href="mailto:garrett@garretthuggins.com"
+              social="Contact"
+            />
             <FooterLink
               href="https://www.linkedin.com/in/garretthuggins/"
               social="LinkedIn"
             />
-            <FooterLink
-              href="https://github.com/garrett-huggins/garretthuggins.com"
-              social="This Site"
-            />
+            <div className="col-span-2 flex items-center hover:text-gray-500">
+              <FooterLink
+                href="https://github.com/garrett-huggins/garretthuggins.com"
+                social="This Site"
+              />
+              <BiGitBranch />
+            </div>
           </div>
         </div>
         <div>
@@ -33,7 +39,7 @@ export default function Footer() {
             alt="GH Logo"
             width={150}
             height={150}
-            className="mx-auto"
+            className="mx-auto w-[100px]"
           />
         </div>
       </div>
