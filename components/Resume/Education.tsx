@@ -15,7 +15,7 @@ export default function Education() {
           href="https://ysu.edu"
           target="_blank"
           rel="noreferrer"
-          className="italic text-red-600 hover:text-red-400 hover:underline"
+          className="italic text-gray-400 hover:text-gray-300 hover:underline"
         >
           @ Youngstown State University
         </a>

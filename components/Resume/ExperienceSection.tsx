@@ -17,7 +17,7 @@ export default function ExperienceSection({
       </div>
       {company ? (
         <a
-          className="mb-2 italic inline-block text-red-600 hover:text-red-400 hover:underline hover:cursor-pointer"
+          className="mb-2 italic inline-block text-gray-400 hover:text-gray-300 hover:underline hover:cursor-pointer"
           href={companyLink}
           target="_blank"
           rel="noreferrer"
