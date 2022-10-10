@@ -7,8 +7,11 @@ export default function AboutSection() {
       <div>
         <div className="flex items-center justify-center mb-3 space-x-3">
           <div>
-            <p className="text-center">Hello! I like to build things.</p>
-            <p>( Designer / Developer / Web Artisan )</p>
+            <p className="sm:text-center">Hello! I like to build things.</p>
+            <p>
+              I&apos;m a frontend developer with a passion for bringing ideas to
+              life.
+            </p>
           </div>
           <div className="border-2 rounded-full p-2 bg-portrait-gradient">
             <Image
