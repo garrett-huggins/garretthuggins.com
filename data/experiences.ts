@@ -13,7 +13,7 @@ const Experiences: ExperienceInterface[] = [
     companyLink: "https://codeyoungstown.com/",
     date: "Jul 2022 - Current",
     desc: [
-      "Worked on design and development of website for local organization that supports local software engineers and developers, using modern frameworks such as Nextjs, Reactjs, and TailwindCSS.",
+      "Worked on design and development of website for local organization that supports local software engineers and developers, using modern frameworks such as Next.js, React.js, and TailwindCSS.",
       "Maintained website directory of local tech companies and job listings.",
     ],
   },
