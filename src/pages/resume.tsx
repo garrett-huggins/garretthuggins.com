@@ -4,6 +4,7 @@ import Experiences from "../../data/experiences";
 import ExperienceSection from "../../components/Resume/ExperienceSection";
 import PrintResume from "../../components/Resume/PrintResume";
 import Skills from "../../components/Resume/Skills";
+import ResumeHeader from "../../components/Resume/ResumeHeader";
 
 export default function Resume() {
   return (
@@ -12,12 +13,7 @@ export default function Resume() {
         <h1 className="text-4xl font-semibold tracking-wide uppercase text-blue-highlight text-center mb-10">
           Resume
         </h1>
-        <div className="mb-10 flex justify-between flex-wrap items-end">
-          <p className="sm:text-5xl text-4xl">Garrett Huggins</p>
-          <p className="sm:text-3xl text-2xl ml-4 text-gray-400">
-            Frontend Developer
-          </p>
-        </div>
+        <ResumeHeader />
 
         {/* Resume Content */}
 
