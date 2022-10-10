@@ -28,7 +28,7 @@ export default function AboutSection() {
         </ul>
         <span className="text-purple-highlight mr-3">@</span>{" "}
         <a
-          className="hover:text-purple-light text-purple-highlight underline"
+          className="hover:text-red-400 text-red-600 hover:underline"
           target="_blank"
           rel="noreferrer"
           href="https://ysu.edu/"

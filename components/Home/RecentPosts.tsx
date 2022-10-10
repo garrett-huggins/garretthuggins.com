@@ -33,7 +33,7 @@ export default function RecentPosts({ posts }: { posts: PostInterface[] }) {
         <p className="flex items-center justify-center">
           Check out my other posts
           <Link href="/blog">
-            <a className="underline ml-1 text-purple-highlight hover:text-purple-light">
+            <a className="hover:underline ml-1 text-red-600 hover:text-red-400">
               here
             </a>
           </Link>
