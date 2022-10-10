@@ -4,7 +4,7 @@ import Footer from "./Footer";
 import { useRouter } from "next/router";
 
 const pageDescription =
-  "Frontend engineer and freelance developer with a passion for bringing ideas to life.";
+  "Garrett Huggins, frontend and freelance developer with a passion for bringing ideas to life.";
 
 export default function Layout({ pageTitle, children, home }: LayoutTypes) {
   const router = useRouter();
