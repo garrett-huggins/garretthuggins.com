@@ -8,6 +8,17 @@ export interface ExperienceInterface {
 
 const Experiences: ExperienceInterface[] = [
   {
+    title: "Student Software Developer",
+    company: "Dev Youngstown",
+    companyLink: "https://www.youngstown.dev/",
+    date: "Nov 2022 - Current",
+    desc: [
+      "Contract based work for local organizations and businesses under the supervision of a lead developer.",
+      "Migrated client websites to modern technologies, such as React.js and Next.js.",
+      "Developed backend API and database using FastAPI and PostgreSQL.",
+    ],
+  },
+  {
     title: "Frontend Developer",
     company: "Code Youngstown",
     companyLink: "https://codeyoungstown.com/",
@@ -38,7 +49,7 @@ const Experiences: ExperienceInterface[] = [
   },
   {
     title: "Freelance Developer",
-    date: "Oct 2021 - Current",
+    date: "Oct 2021 - Aug 2022",
     desc: [
       "Designed and deployed frontend client websites using modern frameworks React.js and Next.js.",
       "Developed prototype applications following client requirements as proof of concepts and minimum viable products using Node.js, MongoDB, and other various frameworks depending on the project.",

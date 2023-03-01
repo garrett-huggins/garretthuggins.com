@@ -5,10 +5,11 @@ export default function Languages() {
         Languages
       </p>
       <ul>
-        <li>Javascript</li>
+        <li>Typescript</li>
         <li>HTML/CSS</li>
         <li>Python</li>
         <li>C++</li>
+        <li>SQL</li>
       </ul>
     </div>
   );
