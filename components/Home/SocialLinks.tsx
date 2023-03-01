@@ -24,7 +24,7 @@ export default function SocialLinks() {
         <FaLinkedin />
       </SocialLink>
       <SocialLink
-        href="https://twitter.com/garrett_h2o"
+        href="https://twitter.com/slanted_dev"
         title="Twitter"
         bgColor="bg-blue-500"
       >
