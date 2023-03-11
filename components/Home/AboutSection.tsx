@@ -9,7 +9,7 @@ export default function AboutSection() {
           <div>
             <p className="sm:text-center">Hello! I like to build things.</p>
             <p>
-              I&apos;m a frontend developer with a passion for bringing ideas to
+              I&apos;m a software developer with a passion for bringing ideas to
               life.
             </p>
           </div>
