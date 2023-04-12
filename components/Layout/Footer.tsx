@@ -13,7 +13,7 @@ export default function Footer() {
               social="GitHub"
             />
             <FooterLink
-              href="https://twitter.com/garrett_h2o"
+              href="https://twitter.com/slanted_dev"
               social="Twitter"
             />
             <FooterLink
